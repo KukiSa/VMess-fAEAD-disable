@@ -5,4 +5,5 @@ serFile=$1
 sed -i '/ExecStart/i\Environment="V2RAY_VMESS_AEAD_FORCED=false"' $serFile
 systemctl daemon-reload
 systemctl restart v2ray
+echo Done.
 exit
